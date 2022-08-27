@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36c691d0-e6a0-41c7-bc2b-1af42e308ee2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/CODEOWNERS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/maven-tests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CHANGES" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.savant" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/main/io/fusionauth/jwt/eddsa/EdDSA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/main/io/fusionauth/jwt/eddsa/EdDSAKeyDecoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/main/io/fusionauth/jwt/eddsa/EdDSASigner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/main/io/fusionauth/jwt/eddsa/EdDSAVerifier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/ed_dsa_ed25519_private_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/ed_dsa_ed25519_public_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/ed_dsa_private_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/ed_dsa_public_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/io/fusionauth/jwt/BaseTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/io/fusionauth/jwt/eddsa/EdDSATest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/jwk/ed_dsa_ed25519_private_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/jwk/ed_dsa_ed25519_public_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/jwk/ed_dsa_private_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/jwk/ed_dsa_public_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fusionauth-jwt-eddsa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fusionauth-jwt-eddsa.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fusionauth-jwt-eddsa.iws" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/fusionauth/jwt/eddsa/EdDSA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/fusionauth/jwt/eddsa/EdDSAKeyDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/fusionauth/jwt/eddsa/EdDSASigner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/fusionauth/jwt/eddsa/EdDSAVerifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java9/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/fusionauth/jwt/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/fusionauth/jwt/eddsa/EdDSATest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/ed_dsa_ed25519_private_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/ed_dsa_ed25519_public_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/ed_dsa_private_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/ed_dsa_public_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jwk/ed_dsa_ed25519_private_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jwk/ed_dsa_ed25519_public_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jwk/ed_dsa_private_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/jwk/ed_dsa_public_key.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DukAkuMOpT68RhF0kZmorpftRg" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/degroff/dev/inversoft/fusionauth/fusionauth-jwt-eddsa",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/resources/jwk" />
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.EdDSATest">
+    <configuration name="EdDSATest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="fusionauth-jwt-eddsa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.fusionauth.jwt.eddsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.fusionauth.jwt.eddsa" />
+      <option name="MAIN_CLASS_NAME" value="io.fusionauth.jwt.eddsa.EdDSATest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EdDSATest.decodePrivateKey" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="fusionauth-jwt-eddsa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.fusionauth.jwt.eddsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.fusionauth.jwt.eddsa" />
+      <option name="MAIN_CLASS_NAME" value="io.fusionauth.jwt.eddsa.EdDSATest" />
+      <option name="METHOD_NAME" value="decodePrivateKey" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EdDSATest.public_keys" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="fusionauth-jwt-eddsa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.fusionauth.jwt.eddsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.fusionauth.jwt.eddsa" />
+      <option name="MAIN_CLASS_NAME" value="io.fusionauth.jwt.eddsa.EdDSATest" />
+      <option name="METHOD_NAME" value="public_keys" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EdDSATest.signAndVerify" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="fusionauth-jwt-eddsa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.fusionauth.jwt.eddsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.fusionauth.jwt.eddsa" />
+      <option name="MAIN_CLASS_NAME" value="io.fusionauth.jwt.eddsa.EdDSATest" />
+      <option name="METHOD_NAME" value="signAndVerify" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.EdDSATest" />
+        <item itemvalue="TestNG.EdDSATest.decodePrivateKey" />
+        <item itemvalue="TestNG.EdDSATest.signAndVerify" />
+        <item itemvalue="TestNG.EdDSATest.public_keys" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36c691d0-e6a0-41c7-bc2b-1af42e308ee2" name="Changes" comment="" />
+      <created>1661556215373</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661556215373</updated>
+      <workItem from="1661556216498" duration="14180000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.savant/cache/io/fusionauth/fusionauth-jwt/6.0.0-{integration}/fusionauth-jwt-6.0.0-{integration}-src.jar!/io/fusionauth/pem/PEMDecoder.java</url>
+          <line>196</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/io/fusionauth/jwt/eddsa/EdDSATest.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.savant/cache/io/fusionauth/fusionauth-jwt/6.0.0-{integration}/fusionauth-jwt-6.0.0-{integration}-src.jar!/io/fusionauth/pem/PEMDecoder.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/fusionauth/jwt/eddsa/EdDSAKeyDecoder.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
