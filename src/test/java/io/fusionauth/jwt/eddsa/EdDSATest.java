@@ -61,7 +61,17 @@ public class EdDSATest extends BaseTest {
     }
 
     // Private keys that contain a public key
-    // TODO
+    for (String f : List.of("ed_dsa_ed25519_private_key_pub.pem")) {
+      String message = "For file [" + f + "]";
+      String encodedPEM = new String(Files.readAllBytes(Paths.get("src/test/resources/" + f)));
+      assertTrue(encodedPEM.contains(PEM.PKCS_8_PRIVATE_KEY_PREFIX), message);
+
+      PEM pem = PEM.decode(encodedPEM);
+      assertNotNull(pem.privateKey, message);
+      assertEquals(pem.privateKey.getFormat(), "PKCS#8", message);
+      assertNotNull(pem.publicKey, message);
+      assertEquals(pem.publicKey.getFormat(), "X.509", message);
+    }
   }
 
   @Test

@@ -24,7 +24,6 @@ import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.X509EncodedKeySpec;
 
-import io.fusionauth.der.DerInputStream;
 import io.fusionauth.der.DerValue;
 import io.fusionauth.jwt.domain.KeyType;
 import io.fusionauth.pem.KeyDecoder;
@@ -40,7 +39,7 @@ public class EdDSAKeyDecoder implements KeyDecoder {
     // Inpput: MC4CAQAwBQYDK2VwBCIEIIJtJBnTuKbIy5YjoNiH95ky3DcA3kRB0I2i7DkVM6Cf
     //   -> https://lapo.it/asn1js/#MC4CAQAwBQYDK2VwBCIEIIJtJBnTuKbIy5YjoNiH95ky3DcA3kRB0I2i7DkVM6Cf
 
-    // No public key:
+    // Example w/out public key
     //
     // SEQUENCE (3 elem)
     //   INTEGER 0
@@ -53,19 +52,27 @@ public class EdDSAKeyDecoder implements KeyDecoder {
     // https://www.rfc-editor.org/rfc/rfc8410
     // https://www.rfc-editor.org/rfc/rfc8410#section-10.3
 
-    //    SubjectPublicKeyInfo  ::=  SEQUENCE  {
-    //       algorithm         AlgorithmIdentifier,
-    //       subjectPublicKey  BIT STRING
-    //   }
+    // Example w/ public ke
+    //
+    // SEQUENCE (5 elem)
+    //   INTEGER 1
+    //   SEQUENCE (1 elem)
+    //     OBJECT IDENTIFIER 1.3.101.112 curveEd25519 (EdDSA 25519 signature algorithm)
+    //   OCTET STRING (34 byte) 0420D4EE72DBF913584AD5B6D8F1F769F8AD3AFE7C28CBF1D4FBE097A88F44755842
+    //     OCTET STRING (32 byte) D4EE72DBF913584AD5B6D8F1F769F8AD3AFE7C28CBF1D4FBE097A88F44755842
+    //   [0] (1 elem)
+    //     SEQUENCE (2 elem)
+    //       OBJECT IDENTIFIER 1.2.840.113549.1.9.9.20
+    //       SET (1 elem)
+    //         UTF8String Curdle Chairs
+    //   [1] (33 byte) 0019BF44096984CDFE8541BAC167DC3B96C85086AA30B6B6CB0C5C38AD703166E1
 
-    if (sequence.length == 3 && sequence[2].tag.rawByte == (byte) 0xA1) {
-      System.out.println("here");
-      byte[] octetString = sequence[2].toByteArray();
-      DerValue[] privateKeySequence = new DerInputStream(new DerInputStream(sequence[2].toByteArray()).toByteArray()).getSequence();
-//    if (privateKeySequence.length == 3 && privateKeySequence[2].tag.rawByte == (byte) 0xA1) {
-      DerValue bitString = new DerInputStream(octetString).readDerValue();
-      byte[] encodedPublicKey = getEncodedPublicKeyFromPrivate(bitString, privateKey.getEncoded());
-      PublicKey publicKey = KeyFactory.getInstance(EdDSA.KeyType.algorithm).generatePublic(new X509EncodedKeySpec(encodedPublicKey));
+    // Grab the public key
+    if (sequence.length == 5) {
+      byte[] bytes = sequence[4].toByteArray();
+      byte[] encodedPublicKey = getEncodedPublicKeyFromPrivate(bytes, privateKey.getEncoded());
+      PublicKey publicKey = KeyFactory.getInstance(EdDSA.KeyType.algorithm)
+                                      .generatePublic(new X509EncodedKeySpec(encodedPublicKey));
       return new PEM(privateKey, publicKey);
     } else {
       // The private key did not contain the public key
