@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022, FusionAuth, All Rights Reserved
+ * Copyright (c) 2022-2023, FusionAuth, All Rights Reserved
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,15 +21,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import io.fusionauth.jwt.eddsa.EdDSA;
 import org.testng.Assert;
 
 public abstract class BaseTest {
-
-  protected BaseTest() {
-    EdDSA.init();
-  }
-
   protected Path getPath(String fileName) {
     return Paths.get("src/test/resources/" + fileName);
   }

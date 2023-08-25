@@ -31,16 +31,5 @@ public class EdDSA {
   public static KeyType KeyType = new KeyType("OKP", "EdDSA", "1.3.101.112");
 
   private EdDSA() {
-
-  }
-
-  public static void init() {
-
-  }
-
-  static {
-    io.fusionauth.jwt.domain.KeyType.register(EdDSA.KeyType);
-    io.fusionauth.jwt.domain.Algorithm.register(EdDSA.Algorithm);
-    io.fusionauth.pem.KeyDecoderFactory.register(EdDSAKeyDecoder.class);
   }
 }
