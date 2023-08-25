@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022, FusionAuth, All Rights Reserved
+ * Copyright (c) 2022-2023, FusionAuth, All Rights Reserved
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,9 @@ import io.fusionauth.pem.domain.PEM;
 import io.fusionauth.security.CryptoProvider;
 import io.fusionauth.security.DefaultCryptoProvider;
 
+/**
+ * @author Daniel DeGroff
+ */
 public class EdDSAVerifier implements Verifier {
   private final CryptoProvider cryptoProvider;
 

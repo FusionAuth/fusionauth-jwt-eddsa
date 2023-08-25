@@ -34,6 +34,9 @@ import io.fusionauth.pem.domain.PEM;
 import io.fusionauth.security.CryptoProvider;
 import io.fusionauth.security.DefaultCryptoProvider;
 
+/**
+ * @author Daniel DeGroff
+ */
 public class EdDSASigner implements Signer {
   private final Algorithm algorithm;
 
