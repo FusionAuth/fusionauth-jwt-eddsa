@@ -13,18 +13,18 @@
  * either express or implied. See the License for the specific
  * language governing permissions and limitations under the License.
  */
-package io.fusionauth.jwt.eddsa.provider;
+package io.fusionauth.jwt.eddsa;
 
-import io.fusionauth.jwt.domain.KeyType;
+import io.fusionauth.jwt.domain.Algorithm;
 import io.fusionauth.jwt.eddsa.EdDSA;
-import io.fusionauth.jwt.spi.KeyTypeProvider;
+import io.fusionauth.jwt.spi.AlgorithmProvider;
 
 /**
  * @author Daniel DeGroff
  */
-public class EdDSAKeyTypeProvider implements KeyTypeProvider {
+public class EdDSAAlgorithmProvider implements AlgorithmProvider {
   @Override
-  public KeyType get() {
-    return EdDSA.KeyType;
+  public Algorithm get() {
+    return EdDSA.Algorithm;
   }
 }

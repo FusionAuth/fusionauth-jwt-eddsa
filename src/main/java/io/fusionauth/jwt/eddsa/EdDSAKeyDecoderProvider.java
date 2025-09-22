@@ -13,7 +13,7 @@
  * either express or implied. See the License for the specific
  * language governing permissions and limitations under the License.
  */
-package io.fusionauth.jwt.eddsa.provider;
+package io.fusionauth.jwt.eddsa;
 
 import io.fusionauth.jwt.eddsa.EdDSAKeyDecoder;
 import io.fusionauth.jwt.spi.KeyDecoderProvider;
